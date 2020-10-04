@@ -48,11 +48,15 @@ def appointment(request):
         your_address = request.POST['your-address']
         your_schedule = request.POST['your-schedule']
         your_message = request.POST['your-message']
+        your_date = request.POST['your-date']
+        your_month = request.POST['your-month']
+        your_year = request.POST['your-year']
+
 
        
        
         #send an email
-        appointment= "Name: "+ your_name + "    >   " + "Phone :" + your_phone +  "     >    " + "Message :" + your_message  + "     >     " +"Schedule :" + your_schedule 
+        appointment= "Name: "+ your_name + "    >   " + "Phone :" + your_phone +  "     >    " + "Message :" + your_message  + "     >     " +"Schedule :" + your_schedule + "Date :" + your_date +"  > "  +"Month :" + your_month + "E-mail :" + your_email
         
         
         
@@ -86,3 +90,5 @@ def appointment(request):
         })
     else:
         return render(request,'dento/home.html',{})
+
+

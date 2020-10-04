@@ -19,8 +19,8 @@
                 <p data-animation="fadeInUp" data-delay="300ms">As a fullstack developer , i will build your own customized dynamic website for an easy growth of your business
                   </p>
                 <div class="welcome-btn-group">
-                  <a href="#" class="btn dento-btn mx-2" data-animation="fadeInUp" data-delay="500ms">Get Started</a>
-                  <a href="#" class="btn dento-btn mx-2 active" data-animation="fadeInUp" data-delay="700ms">Contact Us</a>
+                  <a href="blog.html" class="btn dento-btn mx-2" data-animation="fadeInUp" data-delay="500ms">Get Started</a>
+                  <a href="contact.html" class="btn dento-btn mx-2 active" data-animation="fadeInUp" data-delay="700ms">Contact Us</a>
                 </div>
               </div>
             </div>
@@ -318,7 +318,6 @@
     </div>
   </section>
   <!-- Dento Pricing Table Area End -->
-
   <!-- Book An Oppointment Area Start -->
   <section class="book-an-oppointment-area section-padding-100 bg-img bg-gradient-overlay jarallax clearfix" style="background-image: url('{% static 'website/img/bg-img/12.jpg' %}');">
     <div class="container">
@@ -372,15 +371,44 @@
                 </div>
                 <div class="col-md-6">
                   <div class="form-group mb-30">
-                    <select name="your-time" class="form-control">
-                      <option value="Choose Your Time">Choose Your Schedule</option>
-                      <option value="9 AM to 10 AM">9 AM to 10 AM</option>
-                      <option value="11 AM to 12 PM">11 AM to 12 PM</option>
-                      <option value="2 PM to 4 PM">2 PM to 4 PM</option>
-                      <option value="8 PM to 10 PM">8 PM to 10 PM</option>
+                    <select name="your-date" class="form-control">
+                      <option value="Choose Your Date">Choose Your Date</option>
+                      <option value="Monday">Monday</option>
+                      <option value="Tuesday">Tuesday</option>
+                      <option value="Wednesday">Wednesday</option>
+                      <option value="Thursday">Thursday</option>
+                      <option value="Friday">Friday</option>
                     </select>
                   </div>
                 </div>
+                <!-- Month -->
+                <div class="col-md-6">
+                  <div class="form-group mb-30">
+                    <select name="your-month" class="form-control">
+                      <option value="Choose Your Month">Choose Your Month</option>
+                      <option value="January">January</option>
+                      <option value="February">February</option>
+                      <option value="March">March</option>
+                      <option value="April">April</option>
+                      <option value="May">May</option>
+                      <option value="June">June</option>
+                      <option value="July">July</option>
+                      <option value="August">August</option>
+                      <option value="September">September</option>
+                      <option value="October">October</option>
+                      <option value="November">November</option>
+                      <option value="December">December</option>
+                      
+                    </select>
+                  </div>
+                </div>
+                <!-- Year-->
+                <div class="col-md-6">
+                  <div class="form-group mb-30">
+                    <input type="year" name="your-year" class="form-control" placeholder="Year" required>
+                  </div>
+                </div>
+
                 <div class="col-12">
                   <div class="form-group mb-30">
                     <textarea name="your-message" class="form-control" placeholder="Your Message"></textarea>
